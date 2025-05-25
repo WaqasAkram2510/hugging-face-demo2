@@ -22,4 +22,4 @@ jobs:
       - name: Push to hub
         env:
           HF: ${{ secrets.HG }}
-        run: git push --force https://WaqasAkram041:$HG@huggingface.co/spaces/WaqasAkram041/demo2.git main
+        run: git push --force https://WaqasAkram041:$HF@huggingface.co/spaces/WaqasAkram041/demo2.git main
