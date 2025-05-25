@@ -14,10 +14,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Add remote
+      - name: Push to Hugging Face Spaces
         run: |
-          git remote add space https://${{ secrets.HF }}@huggingface.co/spaces/WaqasAkram041/demo2.git
-
-      - name: Push to hub
-        run: |
-          git push --force space main
+          git push --force https://${{ secrets.HF }}@huggingface.co/spaces/WaqasAkram041/demo2.git main
